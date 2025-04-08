@@ -155,3 +155,110 @@ button:hover {
         transform: translateY(0);
     }
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .circle:nth-child(1) {
+        width: 250px;
+        height: 250px;
+        top: -30px;
+        left: -30px;
+    }
+
+    .circle:nth-child(2) {
+        width: 250px;
+        height: 250px;
+        top: 15%;
+        right: -50px;
+    }
+
+    .circle:nth-child(3) {
+        width: 250px;
+        height: 250px;
+        bottom: 10%;
+        left: 10px;
+    }
+
+    .circle:nth-child(4) {
+        width: 250px;
+        height: 250px;
+        bottom: -80px;
+        right: -60px;
+    }
+
+    .card {
+        width: 85%;
+        padding: 1.5rem;
+    }
+
+    input {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #showGrade {
+        font-size: 20px;
+    }
+}
+
+/* For mobile devices (portrait) */
+@media screen and (max-width: 480px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle:nth-child(1) {
+        width: 150px;
+        height: 150px;
+        top: -20px;
+        left: -20px;
+    }
+
+    .circle:nth-child(2) {
+        width: 150px;
+        height: 150px;
+        top: 20%;
+        right: -40px;
+    }
+
+    .circle:nth-child(3) {
+        width: 150px;
+        height: 150px;
+        bottom: 15%;
+        left: 5px;
+    }
+
+    .circle:nth-child(4) {
+        width: 150px;
+        height: 150px;
+        bottom: -60px;
+        right: -50px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 1.2rem;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #showGrade {
+        font-size: 18px;
+    }
+}
