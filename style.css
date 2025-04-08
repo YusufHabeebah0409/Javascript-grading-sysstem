@@ -1,3 +1,4 @@
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +20,8 @@ body {
 .circle {
     position: absolute;
     border-radius: 50%;
-    filter: blur(5px);
-    opacity: 0.6;
-    animation: float 20s infinite alternate;
+    opacity: 0.8;
+    animation: float 15s infinite alternate;
 }
 
 /* Unique colors, positions, sizes, and animations */
@@ -31,50 +31,55 @@ body {
     height: 300px;
     top: -50px;
     left: -50px;
-    animation: float1 30s infinite alternate;
+    animation: float1 6s infinite alternate;
 }
+
 .circle:nth-child(2) {
     background: plum;
     width: 350px;
     height: 300px;
     top: 10%;
     right: -100px;
-    animation: float2 40s infinite alternate;
+    animation: float2 7s infinite alternate;
 }
+
 .circle:nth-child(3) {
     background: palevioletred;
     width: 350px;
     height: 300px;
     bottom: 10%;
     left: 20px;
-    animation: float3 35s infinite alternate;
+    animation: float3 5s infinite alternate; /* Faster animation */
 }
+
 .circle:nth-child(4) {
     background: orchid;
     width: 350px;
     height: 350px;
     bottom: -100px;
     right: -80px;
-    animation: float4 45s infinite alternate;
+    animation: float4 7s infinite alternate; /* Faster animation */
 }
-
 
 /* Animations */
 @keyframes float1 {
     0% { transform: translate(0, 0); }
-    100% { transform: translate(50px, 100px); }
+    100% { transform: translate(50px, 100px); } /* Top-left to bottom-right */
 }
+
 @keyframes float2 {
     0% { transform: translate(0, 0); }
-    100% { transform: translate(-80px, 120px); }
+    100% { transform: translate(-80px, 120px); } /* Top-right to bottom-left */
 }
+
 @keyframes float3 {
     0% { transform: translate(0, 0); }
-    100% { transform: translate(60px, -60px); }
+    100% { transform: translate(-60px, 60px); } /* Bottom-left to top-right (faster) */
 }
+
 @keyframes float4 {
     0% { transform: translate(0, 0); }
-    100% { transform: translate(-40px, -100px); }
+    100% { transform: translate(40px, -90px); } /* Bottom-right to top-left (faster) */
 }
 
 /* Grading card */
@@ -111,7 +116,7 @@ input {
 input:focus {
     outline: none;
     border-color: #9932CC;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    box-shadow: 3px 3px 5px black;
 }
 
 button {
