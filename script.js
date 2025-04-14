@@ -1,4 +1,4 @@
-function checkGrade() {
+ var checkGrade =() => {
     if (grade.value == "") {
         showGrade.innerHTML = "Input Your Grade"
     } else if (grade.value >= 0 && grade.value <= 39) {
