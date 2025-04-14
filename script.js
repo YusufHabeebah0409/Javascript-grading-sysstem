@@ -13,5 +13,7 @@ function checkGrade() {
         showGrade.innerHTML = "B Good 😍"
     } else if (grade.value >= 81 && grade.value <= 100) {
         showGrade.innerHTML = "A Excellent 🤗"
+    }else{
+        showGrade.innerHTML = "Invalid 😡"
     }
 }
